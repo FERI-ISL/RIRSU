@@ -28,8 +28,27 @@ You will be given a dataset containing few thousands warranty claims data which 
 
 
 ## Dataset
+Description of dataset features:
+- Area: The area where the consumer resides.
+- Consumer_profile: The type of consumer.
+- Product_category: The category of the product.
+- Product_type: The type of product.
+- AC_1001_Issue: Issue code for AC type 1001.
+- AC_1002_Issue: Issue code for AC type 1002.
+- AC_1003_Issue: Issue code for AC type 1003.
+- TV_2001_Issue: Issue code for TV type 2001.
+- TV_2002_Issue: Issue code for TV type 2002.
+- TV_2003_Issue: Issue code for TV type 2003.
+- Claim_Value: The value of the warranty claim.
+- Service_Centre: The service center code.
+- Product_Age: The age of the product in months.
+- Purchased_from: Purchased from manufacturer or dealer. 
+- Call_details: Call time.
+- Purpose: Type of purpose (claim/complaint).
+- Fraud: Target value
+- ID: identification number.
 
-<iframe title="Embedded cell output" src="https://embed.deepnote.com/2884a9be-fa17-4020-bda5-454a7d229c77/5238504de55e4c009fb14aa52cfda47c/296cbbd647d542f79323cec2a69db496" style="height:inherit"></iframe>
+[Here is the link to dataset preview.](https://embed.deepnote.com/2884a9be-fa17-4020-bda5-454a7d229c77/5238504de55e4c009fb14aa52cfda47c/296cbbd647d542f79323cec2a69db496)
 
 ## Project milestones
 Bellow are defined crutial milestones on your journey to complete this project assignment. It is advised (not mandatory) that when each milestone is reached you check with the teaching assistant whether you are on the right track. 
@@ -54,8 +73,9 @@ Bellow are defined crutial milestones on your journey to complete this project a
 > You should train and evaluate at least 5 different classification algorithms with various parameter settings to find the best performing one, which you will use in your intelligent web application.
 
 ### 3. Milestone - Pipelines
+- For the process of filling missing values, standardizing/normalizing numeric features and one-hot encoding categorical features (1. Milestone) use [sklearn pipelines](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) instead on manually manipulating the data.
 - Recreate in the previous phase best achieved predictive model and train it on the complete dataset using sklearn pipelines.
-  <iframe title="Embedded cell output" src="https://embed.deepnote.com/2884a9be-fa17-4020-bda5-454a7d229c77/5238504de55e4c009fb14aa52cfda47c/bce457d7696f45deade497dc7828388a" style="height:270px;width:100%;"></iframe>
+    ![Pipeline Demo](images/pipeline_demo.png)
 - Serialize complete pipeline with [pickle](https://docs.python.org/3/library/pickle.html) or with some similar library.
 
 ### 4. Milestone - Predictive REST API
