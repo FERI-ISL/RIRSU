@@ -75,7 +75,7 @@ Bellow are defined crutial milestones on your journey to complete this project a
 ### 3. Milestone - Pipelines
 - For the process of filling missing values, standardizing/normalizing numeric features and one-hot encoding categorical features (1. Milestone) use [sklearn pipelines](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) instead on manually manipulating the data.
 - Recreate in the previous phase best achieved predictive model and train it on the complete dataset using sklearn pipelines.
-    ![Pipeline Demo](images/pipeline_demo.png)
+    ![Pipeline Demo](images/complete_pipeline.png)
 - Serialize complete pipeline with [pickle](https://docs.python.org/3/library/pickle.html) or with some similar library.
 
 ### 4. Milestone - Predictive REST API
