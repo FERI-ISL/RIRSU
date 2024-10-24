@@ -50,6 +50,8 @@ Description of dataset features:
 
 [Here is the link to dataset preview.](https://embed.deepnote.com/2884a9be-fa17-4020-bda5-454a7d229c77/5238504de55e4c009fb14aa52cfda47c/296cbbd647d542f79323cec2a69db496)
 
+[**Download dataset**](dataset/warranty_claims.csv)
+
 ## Project milestones
 Bellow are defined crutial milestones on your journey to complete this project assignment. It is advised (not mandatory) that when each milestone is reached you check with the teaching assistant whether you are on the right track. 
 
