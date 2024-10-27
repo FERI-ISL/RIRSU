@@ -14,7 +14,7 @@ Cilj naloge je z uporabo napovednega modela napovedati dnevno število izposojen
 Opis spremenljivk podatkovne zbirke: 
 - date: datum izposoje
 - rented_bike_count: število izposoj koles
-- hour: ura
+- hour: ura v dnevu
 - temperature: temperatura v stopinjah celzija
 - humidity: vlažnost zraka izražena v odstotkih
 - windspeed: hitrost vetra izražena v m/s
@@ -26,7 +26,7 @@ Opis spremenljivk podatkovne zbirke:
 - snowfall: sneženje izraženo v cm
 - seasons: letni časi izraženi s kategorijami: winter, spring, summer, autumn
 - holiday: prazniki izraženi s kategorijama: Holiday/No holiday
-- work_hours: čas delovnika izražen s kategorijama: Yes/No 
+- work_hours: izposoja v času delovnika: Yes/No 
 
 ### Obdelava podatkov naj zajema
 - Naložite podatkovno zbirko v [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
@@ -50,8 +50,9 @@ Opis spremenljivk podatkovne zbirke:
   - vrednost razložene variance.
 
 ## Dodaten del (1,5 točke)
+Nalogo nadgradite na način, da za reševanje problema napovedovanja števila izposojenih koles, namesto algoritma linearne regresije uporabite Ridge algoritem. Učenje in ovrednotenje izvedite na popolnoma enak način kot v obveznem delu naloge.
 
+Dodatno rezultate metrik obeh omenjenih algoritmov primerjajte in izrišite stolpične diagrame za vsako izmed metrik.
 
 ## Zagovor naloge
-
 Nalogo je potrebno zagovoriti na vajah pri asistentu.

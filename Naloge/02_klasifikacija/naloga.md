@@ -34,8 +34,9 @@ Cilj naloge je z uporabo napovednega modela napovedati v katero izmed kategorij 
   - utežen priklic. 
 
 ## Dodaten del (1,5 točke)
+Nalogo nadgradite na način, da za reševanje problema klasifikacije slik, namesto algoritma odločitvenega drevesa uporabite algoritem K-najbližjih sosedov. Učenje in ovrednotenje izvedite na popolnoma enak način kot v obveznem delu naloge.
 
+Dodatno rezultate metrik obeh omenjenih algoritmov primerjajte in izrišite stolpične diagrame za vsako izmed metrik.
 
 ## Zagovor naloge
-
 Nalogo je potrebno zagovoriti na vajah pri asistentu.
