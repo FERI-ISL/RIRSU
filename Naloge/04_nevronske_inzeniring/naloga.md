@@ -42,7 +42,11 @@ V dodatnem delu boste nadgradili procesiranje slikovne podatkovne zbirke ter zgr
 
 ### Obdelava podatkov
 
-Pred normalizacijo slik vključite v proces obdelave uporabo filtrov, ki omogočajo izpostavitev oz. ekstracijo različnih lastnosti iz slik s ciljem, da bolj poudarimo ključne lastnosti na slikah. V ta namen uporabite poljuben filter iz nabora že implementiranih filtrov knjižnice knjižnice [pillow](https://pillow.readthedocs.io/en/stable/index.html), ki jih najdemo v modulu [ImageFilter](https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html).
+Pred normalizacijo slik vključite v proces obdelave uporabo filtrov, ki omogočajo izpostavitev oz. ekstracijo različnih lastnosti iz slik s ciljem, da bolj poudarimo ključne lastnosti na slikah (glej spodnji primer).
+
+![Primer uporabe filtrov nad slikami](filtri_primer.png)
+
+V ta namen uporabite poljuben filter iz nabora že implementiranih filtrov knjižnice knjižnice [pillow](https://pillow.readthedocs.io/en/stable/index.html), ki jih najdemo v modulu [ImageFilter](https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html).
 
 ### Izgradnja napovednega modela
 - Za klasifikacijski problem naučite ponovno naučite vse modele iz obveznega dela naloge.
