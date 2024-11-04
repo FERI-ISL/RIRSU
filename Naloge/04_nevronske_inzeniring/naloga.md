@@ -13,14 +13,11 @@ Cilj naloge je naloge je uporabiti pridobljeno znanje iz področja inženiringa 
 Postopka obdelave podatkov se lotite na podoben način kot ste se jih lotili pri prejšnjih nalogah s to razliko, da pri tej nalogi nadgradite proces z:
 - Regresijski problem:
   - Manjkajoče vrednosti v podatkovni zbirki zapolnite z napovedanimi vrednostmi, pri čemer za napovedovanje vrednosti uporabite linearno regresijo.
-  - Izvedite transformacijo vrednosti za sledeče značilnice, pri čemer uporabite primerne transformacije ([pomoč](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:pig_transformation.jpg)) glede na porazdelitev vrednosti posamezne značilnice:
-    - wind_speed
-    - visibility
-    - solar_radiation
-    - rainfall
-    - snowfall 
+  - Izvedite transformacijo vrednosti za sledeče značilnice, pri čemer uporabite primerne transformacije ([pomoč](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:pig_transformation.jpg)) glede na porazdelitev vrednosti posamezne numerične značilnice.
   - Zgradite tri nove smiselne značilnice.
+  - Glede na porazdelitev vrednosti podatkov numeričnih značilnic po uporabi transformacij primerno uporabite proces normalizacije oz. standardizacije vrednosti.
   - Izvedite proces izbire značilnic s filtriranjem pri čemer uporabite metodo "information gain".
+    - Glede na pridobljene vrednosti za posamezno značilnico sami presodite koliko izmed značilnic boste vključili v učenje.
 - Klasifikacijski problem:
   - Normalizirajte polja slik. 
 
@@ -37,13 +34,18 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se jih lotili pri
   - Za vse metode (ansambelske in nevronske mreže), posebej za klasifikacijski problem in posebej za regresijski problem, izrišite grafikone kvartilov (angl. boxplot) za vsako izmed izračunanih metrik, pri čemer naj bodo v obeh primerih za vse algoritme strojnega učenja grafikoni kvartilov združeni na eni sliki (skupno torej 7 slik).
   - Izrišite stolpične diagrame za vse povprečne vrednosti posamezne metrike (posebej za klasifikacijski problem in posebej za regresijski problem) uporabljenih metod strojnega učenja. 
 
-## Dodaten del (1,5 točke)
+## Dodaten del (2,5 točke)
 V dodatnem delu boste nadgradili procesiranje slikovne podatkovne zbirke ter zgradili dodaten lastno prilagojen model nevronske mreže.
 
 ### Obdelava podatkov
-
-Pred normalizacijo slik vključite v proces obdelave uporabo filtrov, ki omogočajo izpostavitev oz. ekstracijo različnih lastnosti iz slik s ciljem, da bolj poudarimo ključne lastnosti na slikah (glej spodnji primer).
-
+Postopek obdelave podatkov iz obveznega dela razširite:
+- Regresijski problem:
+    - Manjkajoče vrednosti v podatkovni zbirki zapolnite z napovedanimi vrednostmi, pri čemer za napovedovanje vrednosti namesto linearne regresije uporabite eno izmed ansambelskih metod.
+    - Zgradite dodatni dve značilnici (poleg obstoječih treh iz obveznega dela).
+- Klasifikacijski problem:
+    - Pred pretvorbo slike v enodimenzionalno polje uporabite poljuben filter za zaznavo robov na sliki ([pomoč](https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html)).
+    - Izvedite normalizacijo slik.
+    - Slike pretvorite v enodimenzionalno polje enako kot pri obveznem delu.
 ![Primer uporabe filtrov nad slikami](filtri_primer.png)
 
 V ta namen uporabite poljuben filter iz nabora že implementiranih filtrov knjižnice knjižnice [pillow](https://pillow.readthedocs.io/en/stable/index.html), ki jih najdemo v modulu [ImageFilter](https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html).
