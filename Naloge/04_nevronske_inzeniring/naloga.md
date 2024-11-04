@@ -13,7 +13,7 @@ Cilj naloge je naloge je uporabiti pridobljeno znanje iz področja inženiringa 
 Postopka obdelave podatkov se lotite na podoben način kot ste se jih lotili pri prejšnjih nalogah s to razliko, da pri tej nalogi nadgradite proces z:
 - Regresijski problem:
   - Manjkajoče vrednosti v podatkovni zbirki zapolnite z napovedanimi vrednostmi, pri čemer za napovedovanje vrednosti uporabite linearno regresijo.
-  - Izvedite transformacijo vrednosti za sledeče značilnice, pri čemer uporabite primerne transformacije glede na porazdelitev vrednosti posamezne značilnice:
+  - Izvedite transformacijo vrednosti za sledeče značilnice, pri čemer uporabite primerne transformacije ([pomoč](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:pig_transformation.jpg)) glede na porazdelitev vrednosti posamezne značilnice:
     - wind_speed
     - visibility
     - solar_radiation
