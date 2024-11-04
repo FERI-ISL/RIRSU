@@ -52,8 +52,16 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se ga lotili pri 
 - Izrišite stolpične diagrame za vse povprečne vrednosti posamezne metrike zgrajenih napovednih modelov konvolucijskih nevronskih mrež. 
 
 
-## Dodaten del (1,5 točke)
-*TODO*
+## Dodaten del (2,5 točke)
+Cilj v dodatnem delu je, da ustvarite čim boljšo arhitekturo konvolucijske nevronske mreže ter za učenje uporabite najprimernejše vrednosti učnih parametrov.
+
+Uporabite lahko karkoli razen že vnaprej naučenih napovednih modelov ter priznanih arhitektur konvolucijskih nevronskih mrež. Poleg tega naj maksimalno število epoh ne presega 100.
+
+Najboljši model si shranite v datoteko.
+
+Naložite najboljši model iz datoteke in ga uporabite za pridobitev napovedi nad testnimi podatki (ustvarite testni iterator nad slikami v mapi test). Na podlagi pridobljenih napovedi ustvarite datoteko za oddajo, ki jo oddate na Kaggle tekmovanje. Na Kaggle lahko dnevno oddate največ 100 datotek z rešitvami. Kaggle tekmovanje omogoča, da spremljate lestvico uspešnosti vseh sodelujočih. Poleg dosežkov vseh sodelujočih je tudi zapisana mejna vrednost uspešnosti napovednega modela, katero morate za dosego vseh točk pri dodatnem delu preseči.
+
+Pri zagovoru boste ponovno pridobili napovedi za testne slike in ustvarili vašo datoteko za oddajo v namen preverbe, da datoteke za oddajo niste zapisali ročno, temveč je res rezultat napovedi naučenega modela.
 
 ## Zagovor naloge
 Nalogo je potrebno zagovoriti na vajah pri asistentu.
