@@ -13,7 +13,7 @@ Cilj naloge je naloge je uporabiti pridobljeno znanje iz področja inženiringa 
 Postopka obdelave podatkov se lotite na podoben način kot ste se jih lotili pri prejšnjih nalogah s to razliko, da pri tej nalogi nadgradite proces z:
 - Regresijski problem:
   - Manjkajoče vrednosti v podatkovni zbirki zapolnite z napovedanimi vrednostmi, pri čemer za napovedovanje vrednosti uporabite linearno regresijo.
-  - Izvedite transformacijo vrednosti za sledeče značilnice, pri čemer uporabite primerne transformacije ([pomoč](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:pig_transformation.jpg)) glede na porazdelitev vrednosti posamezne numerične značilnice.
+  - Izvedite transformacijo vrednosti za numerične značilnice, pri čemer uporabite primerne transformacije ([pomoč](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:pig_transformation.jpg)) glede na porazdelitev vrednosti posamezne numerične značilnice.
   - Zgradite tri nove smiselne značilnice.
   - Glede na porazdelitev vrednosti podatkov numeričnih značilnic po uporabi transformacij primerno uporabite proces normalizacije oz. standardizacije vrednosti.
   - Izvedite proces izbire značilnic s filtriranjem pri čemer uporabite metodo "information gain".
@@ -35,7 +35,7 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se jih lotili pri
   - Izrišite stolpične diagrame za vse povprečne vrednosti posamezne metrike (posebej za klasifikacijski problem in posebej za regresijski problem) uporabljenih metod strojnega učenja. 
 
 ## Dodaten del (2,5 točke)
-V dodatnem delu boste nadgradili procesiranje slikovne podatkovne zbirke ter zgradili dodaten lastno prilagojen model nevronske mreže.
+V dodatnem delu boste nadgradili procesiranje regresijske in klasifikacijske podatkovne zbirke ter zgradili dodaten lastno prilagojen model nevronske mreže.
 
 ### Obdelava podatkov
 Postopek obdelave podatkov iz obveznega dela razširite:

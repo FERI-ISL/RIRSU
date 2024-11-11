@@ -32,7 +32,7 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se ga lotili pri 
     - 2-dimenzionalni globalni združevalni sloj s povprečenjem
     - Dva polno povezana oz. zgoščevalna sloja vsak s 128 nevroni in relu aktivacijsko funkcijo
     - Izhodni polno povezan oz. zgoščevalni sloj s tremi nevroni in aktivacijsko funckijo softmax
-  - Zgradite napovedni model konvolucijske nevronske mreže z lastno arhitekturo s ciljem, da dobite čim boljše rezultate napovedne uspešnosti.
+  - Zgradite napovedni model konvolucijske nevronske mreže z **lastno arhitekturo** s ciljem, da dobite čim boljše rezultate napovedne uspešnosti.
   - Učenje zgrajenih napovednih modelov konvolucijske nevronske mreže:
     - Napovedne modele učite največ 50 epoh.
     - Za optimizacijo učenja uporabite algoritem adam
@@ -49,17 +49,17 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se ga lotili pri 
 - Ovrednotenje opravite na enak način kot pri nalogi 3.
 - Primerjava napovednih modelov: Shranite vse vrednosti vseh metrik za posamezen zgrajen model konvolucijske nevronske mreže Izračunajte povprečne vrednosti posamezne metrike za posamezen napovedni model konvolucijske nevronske mreže glede na vrednosti v prečnih rezih.
 - Za vse metode zgrajene napovedne modele konvolucijskih nevronskih mrež izrišite grafikone kvartilov (angl. boxplot) za vsako izmed izračunanih metrik, pri čemer naj bodo v obeh primerih za vse algoritme strojnega učenja grafikoni kvartilov združeni na eni sliki (skupno torej 4 slike).
-- Izrišite stolpične diagrame za vse povprečne vrednosti posamezne metrike zgrajenih napovednih modelov konvolucijskih nevronskih mrež. 
+- Izrišite stolpične diagrame za vse povprečne vrednosti posamezne metrike zgrajenih napovednih modelov konvolucijskih nevronskih mrež ter rezultate primerjajte z dosedaj uporabljenimi algoritmi strojnega učenja.
 
 
 ## Dodaten del (2,5 točke)
-Cilj v dodatnem delu je, da ustvarite čim boljšo arhitekturo konvolucijske nevronske mreže ter za učenje uporabite najprimernejše vrednosti učnih parametrov.
+Cilj v dodatnem delu je, da ustvarite čim boljšo arhitekturo konvolucijske nevronske mreže ter vrednosti parametrov z namenom doseči kar se da visoko napovedno uspešnost.
 
-Uporabite lahko karkoli razen že vnaprej naučenih napovednih modelov ter priznanih arhitektur konvolucijskih nevronskih mrež. Poleg tega naj maksimalno število epoh ne presega 100.
+Uspešnost vašega modela boste preverili v okviru **Kaggle izziva** oz. tekmovanje v katerem se boste pomerili z vašimi sošolci (povezava bo deljena preko klasičnih komunikacijskih kanalov).  
 
-Najboljši model si shranite v datoteko.
+Za namen tekmovanja lahko uporabite karkoli razen že vnaprej naučenih napovednih modelov ter priznanih arhitektur konvolucijskih nevronskih mrež. Poleg tega naj maksimalno število epoh ne presega 100.
 
-Naložite najboljši model iz datoteke in ga uporabite za pridobitev napovedi nad testnimi podatki (ustvarite testni iterator nad slikami v mapi test). Na podlagi pridobljenih napovedi ustvarite datoteko za oddajo, ki jo oddate na Kaggle tekmovanje. Na Kaggle lahko dnevno oddate največ 100 datotek z rešitvami. Kaggle tekmovanje omogoča, da spremljate lestvico uspešnosti vseh sodelujočih. Poleg dosežkov vseh sodelujočih je tudi zapisana mejna vrednost uspešnosti napovednega modela, katero morate za dosego vseh točk pri dodatnem delu preseči.
+Najboljši model si shranite v datoteko in ga uporabite za pridobitev napovedi nad testnimi podatki (ustvarite testni iterator nad slikami v mapi test). Na podlagi pridobljenih napovedi ustvarite datoteko za oddajo, ki jo oddate na Kaggle tekmovanje. Na Kaggle lahko dnevno oddate največ 100 datotek z rešitvami. Kaggle tekmovanje omogoča, da spremljate lestvico uspešnosti vseh sodelujočih. Poleg dosežkov vseh sodelujočih je tudi zapisana mejna vrednost uspešnosti napovednega modela (baseline), katero morate za dosego vseh točk pri dodatnem delu preseči.
 
 Pri zagovoru boste ponovno pridobili napovedi za testne slike in ustvarili vašo datoteko za oddajo v namen preverbe, da datoteke za oddajo niste zapisali ročno, temveč je res rezultat napovedi naučenega modela.
 
