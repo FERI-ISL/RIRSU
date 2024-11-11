@@ -43,6 +43,7 @@ Postopka obdelave podatkov se lotite na podoben način kot ste se ga lotili pri 
       - Ponovno zgradite enaki arhitekturi konvolucijskih nevronskih mrež kot je zapisano zgoraj. Spremenite vrednosti hiperparametrov kot so velikost paketkov (batch), učna stopnja (angl. learning rate), optimizacijski algoritem, ipd. z namenom izboljšati in/ali pohitriti proces učenja. Zgolj parameter, ki definira število epoh naj ostane enak (50).
     - Na koncu ste torej zgradili in naučili 4 različne modele konvolucijske nevronske mreže.
       - Učne točnosti in validacijske točnosti ter vrednosti funkcije izgube (loss) tako nad učno kot nad validacijsko množico v vsakem prečnem rezu za en model izrišite na enem grafu. Spodaj je primer takšnega grafa za en model v enem prečnem rezu.
+
       ![Primer grafa poteka učenja](acc_loss.png)
 
 ### Ovrednotenje napovednega modela
