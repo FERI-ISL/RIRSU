@@ -24,7 +24,7 @@ Postopka obdelave podatkov se lotite na način, da iz podane podatkovne množice
     - Pomikanje je s korakom enega zapisa
     - Primer: 
     
-    ![Primer sliding window](primer_sliding_window.png)
+    ![Primer sliding window](primer_sliding_window.gif)
 
     - Pri tem vrednosti števila izposoje koles okna velikost 186 predstavljajo vhodne značilnice X, naslednja vrednost v vrsti pa y.
     - *Pomoč*:
