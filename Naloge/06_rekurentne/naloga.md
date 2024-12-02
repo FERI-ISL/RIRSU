@@ -16,15 +16,15 @@ Postopka obdelave podatkov se lotite na način, da iz podane podatkovne množice
 - Iz celotnega DataFrama filtrirajte zgolj ciljno značilnico "available_bike_stands"
 - Tako oblikovan DataFrame preoblikujte v numpy array za lažje nadaljnje delo
 - Razdelite tako pridobljeno univariatno časovno vrsto na učno in testno:
-    - Pri čemer za testiranje uporabite zadnji 1302 meritvi
+    - Pri čemer za testiranje uporabite zadnje 1302 meritve
 - Vrednosti časovne vrste preoblikujte (standardizacija/normalizacija) na pravilen način
 
-### Priprava podatkov na učenje naj zajema:
+### Priprava podatkov na učenje
 - Podano časovno vrsto razdelite na okna velikosti 186
     - Pomikanje je s korakom enega zapisa
     - Primer: 
     
-    <img src="https://estudij.um.si/pluginfile.php/733261/mod_assign/intro/primer_sliding_window.gif" />
+    ![Primer sliding window](primer_sliding_window.png)
 
     - Pri tem vrednosti števila izposoje koles okna velikost 186 predstavljajo vhodne značilnice X, naslednja vrednost v vrsti pa y.
     - *Pomoč*:
@@ -59,9 +59,9 @@ Izgradnjo treh arhitektur rekurentnih nevronskih mrež pri čemer naj:
 - Nad učnimi, testnimi in napovedanimi podatki opravite inverzno operacijo standardizacije
 - Za vsak model izračunajte metrike iz 1 naloge ter za vsak model izrišite grafa kot sta prikazana spodaj
 
-<img src="https://estudij.um.si/pluginfile.php/733261/mod_assign/intro/napoved_modela.png" />
+![Graf napovedi](napoved_modela.png)
 
-<img src="https://estudij.um.si/pluginfile.php/733261/mod_assign/intro/napoved_modela_test.png" />
+![Graf napovedi nad testno množico](napoved_modela_test.png)
 
 ## Dodaten del (1,5 točke)
 Cilj v dodatnem delu je, da preizkusite delovanje rekurentnih arhitektur iz osnovnega dela nad multivariatnimi podatki.
@@ -74,10 +74,11 @@ Postopka obdelave podatkov se lotite na enak način kot pri osnovnem delu s to r
 - surface_pressure
 
 Primer takšnega podatkovnega okvirja je prikazan na spodnji sliki.
-<img src="https://estudij.um.si/pluginfile.php/733261/mod_assign/intro/multivariatni_df.png" />
+![Primer podatkovnega okvirja](multivariatni_df.png)
+
 Morebitne manjkajoče vrednosti zapolnite z Random Forest regresorjem.
 
-### Priprava podatkov na učenje naj zajema:
+### Priprava podatkov na učenje
 Korake enake kot pri osnovnem delu. Razlika je zgolj, da pri multivariatnih časovnih vrstah delimo v časovna okna več značilnic in ne zgolj ene.
 
 *Pomoč:*
@@ -86,7 +87,7 @@ Korake enake kot pri osnovnem delu. Razlika je zgolj, da pri multivariatnih čas
 - Preoblikovani X_train: (25995, 5, 186)
 - Preoblikovani X_test: (1302, 5, 186)
 
-### Izgradnja, učenje in ovrednotenje napovednega modela:
+### Izgradnja, učenje in ovrednotenje napovednega modela
 Izgradite in naučite modele enake kot pri osnovnem delu. Prav tako naj bo enako tudi ovrednotenje in izris grafov.
 
 Dodatno primerjajte (z izrisom grafov) tudi pridobljene rezultate med modeli iz osnovnega in dodatnega dela.
